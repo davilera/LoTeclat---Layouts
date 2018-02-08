@@ -1,115 +1,119 @@
-#define UC4(a,b,c,d) I(1), D(LCTL), D(LSFT), T(U), U(LSFT), U(LCTL), T(a), T(b), T(c), T(d), T(ENT)
-#define UC5(a,b,c,d,e) I(1), D(LCTL), D(LSFT), T(U), U(LSFT), U(LCTL), T(a), T(b), T(c), T(d), T(e), T(ENT)
+enum unicode_name {
+	ASTON,  // astonished face
+	BHART,  // broken heart:
+	BICEPS, // strong arm
+	BYE,    // waving hand
+	CELEB,  // celebration 🙌
+	CLAP,   // hand clapping
+	CONFU,  // confused
+	COOL,   // smile with sunglasses 😎
+	CRY,    // crying face 😭
+	CRY2,   // crying face 😢
+	DISAP,  // disappointed
+	EYERT,  // smiling face with heart shaped eyes 😍
+	EYES,   // eyes
+	FEAR,   // face screaming in fear
+	FLUSH,  // flushed 😳
+	GRIN,   // grinning face 😊
+	HALO,   // smiling face with halo
+	HART2,  // two hearts 💕
+	HEART,  // heart ❤
+	HORNS,  // smiling face with horns
+	HUG,    // hug emoji
+	HUNRD,  // 100
+	KISS,   // kiss 😘
+	LOL,    // lol face
+	MOON,   // moon
+	MUNCH,  // munch's scream
+	MUSIC,  // musical notes
+	NOEVH,  // hear no evil
+	NOEVK,  // speak no evil
+	NOEVS,  // see no evil
+	NOSEE,  // monkey can't see
+	OKHND,  // ok hand sign 👌
+	PALM,   // palm face
+	PENSV,  // pensive 😔
+	PHEW,   // relieved 😌
+	POO,    // pile of poo
+	PRAY,   // pray 🙏
+	RAGE,   // angry face
+	RECYC,  // recycle ♻
+	SHRUG,  // shrug emoji
+	SKULL,  // skull
+	SLEEP,  // sleeping face
+	SMEYE,  // smiling face with smiling eyes 😊
+	SMILE,  // grining face with smiling eyes 😁
+	SMIRK,  // smirk 😏
+	SUN,    // sun
+	SWEAT,  // smiling face with open mouth & sweat
+	THINK,  // thinking face
+	THMDN,  // thumb down 👎
+	THMUP,  // thumb up 👍
+	TJOY,   // tears of joy 😂
+	TONGU,  // face with tongue & winking eye
+	UNAMU,  // unamused 😒
+	VIC,    // victory hand
+	WEARY,  // weary 😩
+	WINK,   // wink 😉
+	YUMMY,  // face savoring delicious food
+};
 
-/* 😇   */
-#define EC_ANGL M(1)
-#define EMOJI_ANGEL         UC5(1,F,6,0,7), END
-
-/* 💪   */
-#define EC_BCPS M(2)
-#define EMOJI_BICEPS        UC5(1,F,4,A,A), UC5(1,F,3,F,C), END
-
-/* 😎   */
-#define EC_SUNG M(3)
-#define EMOJI_SUNGLASSES    UC5(1,F,6,0,E), END
-
-/* 😐   */
-#define EC_DFCK M(4)
-#define EMOJI_DAFUCK        UC5(1,F,6,1,0), END
-
-/* 😡   */
-#define EC_RAGE M(5)
-#define EMOJI_RAGE          UC5(1,F,6,2,1), END
-
-/* 😳   */
-#define EC_FLSH M(6)
-#define EMOJI_FLUSHED       UC5(1,F,6,3,3), END
-
-/* 😁   */
-#define EC_GRIN M(7)
-#define EMOJI_GRIN          UC5(1,F,6,0,1), END
-
-/* 🤗   */
-#define EC_HUG  M(8)
-#define EMOJI_HUG           UC5(1,F,9,1,7), END
-
-/* 😍   */
-#define EC_INLV M(9)
-#define EMOJI_INLOVE        UC5(1,F,6,0,D), END
-
-/* ❤   */
-#define EC_HRT  M(10)
-#define EMOJI_HEART         UC4(2,7,6,4), END
-
-/* 😘   */
-#define EC_KISS M(11)
-#define EMOJI_KISS          UC5(1,F,6,1,8), END
-
-/* 😂   */
-#define EC_LOL  M(12)
-#define EMOJI_LOL           UC5(1,F,6,0,2), END
-
-/* 😱   */
-#define EC_MUN  M(13)
-#define EMOJI_MUNCH         UC5(1,F,6,3,1), END
-
-/* 😒   */
-#define EC_UNIM M(14)
-#define EMOJI_NOT_IMPRESSED UC5(1,F,6,1,2), END
-
-/* 😲   */
-#define EC_OMG  M(15)
-#define EMOJI_OMG           UC5(1,F,6,3,2), END
-
-/* 😤   */
-#define EC_PISS M(16)
-#define EMOJI_PISSED_OFF    UC5(1,F,6,2,4), END
-
-/* 😜   */
-#define EC_TWNK M(17)
-#define EMOJI_WINK_TONGUE   UC5(1,F,6,1,C), END
-
-/* 🤣   */
-#define EC_ROLL M(18)
-#define EMOJI_ROLL          UC5(1,F,9,2,3), END
-
-/* 😅   */
-#define EC_SWT  M(19)
-#define EMOJI_SWEAT_SMILE   UC5(1,F,6,0,5), END
-
-/* 🤔   */
-#define EC_THNK M(20)
-#define EMOJI_THINKING      UC5(1,F,9,1,4), END
-
-/* 👍   */
-#define EC_UP   M(21)
-#define EMOJI_THUMBS_UP     UC5(1,F,4,4,D), UC5(1,F,3,F,C), END
-
-/* ✌   */
-#define EC_VICT M(22)
-#define EMOJI_VICTORY       UC4(2,7,0,C), UC5(1,F,3,F,C), END
-
-/* 😉   */
-#define EC_RWNK M(23)
-#define EMOJI_WINK          UC5(1,F,6,0,9), END
-
-/* 😏   */
-#define EC_COOL M(24)
-#define EMOJI_COOL_SMILE    UC5(1,F,6,0,F), END
-
-/* 👌   */
-#define EC_OK  M(25)
-#define EMOJI_OK            UC5(1,F,4,4,C), UC5(1,F,3,F,C), END
-
-/* 😴   */
-#define EC_ZZZ  M(26)
-#define EMOJI_ZZZ           UC5(1,F,6,3,4), END
-
-/* 🤷   */
-#define EC_SHRG M(27)
-#define EMOJI_SHRUGGIE UC5(1,F,9,3,7), UC5(1,F,3,F,B), UC4(2,0,0,D), UC4(2,6,4,2), UC4(F,E,0,F), END
-
-/* 🤷   */
-#define EC_PALM M(28)
-#define EMOJI_PALM_FACE UC5(1,F,9,2,6), UC5(1,F,3,F,B), UC4(2,0,0,D), UC4(2,6,4,2), UC4(F,E,0,F), END
-
+const uint32_t PROGMEM unicode_map[] = {
+	[ASTON] = 0x1F632,
+	[BICEPS] = 0x1F4AA,
+	[HUG] = 0x1F917,
+	[LOL] = 0x1F923,
+	[MUNCH] = 0x1F631,
+	[NOSEE] = 0x1F648,
+	[PALM] = 0x1F926,
+	[RAGE] = 0x1F621,
+	[SHRUG] = 0x1F937,
+	[THINK] = 0x1F914,
+  [BHART] = 0x1F494,
+  [BYE] = 0x1F44B,
+  [CELEB] = 0x1F64C,
+  [CLAP] = 0x1F44F,
+  [CONFU] = 0x1F615,
+  [COOL] = 0x1F60E,
+  [CRY2] = 0x1F622,
+  [CRY] = 0x1f62d,
+  [DISAP] = 0x1F61E,
+  [EYERT] = 0x1f60d,
+  [EYES] = 0x1F440,
+  [FEAR] = 0x1F631,
+  [FLUSH] = 0x1F633,
+  [GRIN] = 0x1F600,
+  [HALO] = 0x1F607,
+  [HART2] = 0x1F495,
+  [HEART] = 0x2764,
+  [HORNS] = 0x1F608,
+  [HUNRD] = 0x1F4AF,
+  [KISS] = 0x1F618,
+  [MOON] = 0x1F314,
+  [MUSIC] = 0x1F3B6,
+  [NOEVH] = 0x1F649,
+  [NOEVK] = 0x1F64A,
+  [NOEVS] = 0x1F648,
+  [OKHND] = 0x1F44C,
+  [PENSV] = 0x1F614,
+  [PHEW] = 0x1F60C,
+  [POO] = 0x1F4A9,
+  [PRAY] = 0x1F64F,
+  [RECYC] = 0x267B,
+  [SKULL] = 0x1F480,
+  [SLEEP] = 0x1F634,
+  [SMEYE] = 0x1F60A,
+  [SMILE] = 0x1F601,
+  [SMIRK] = 0x1F60F,
+  [SUN] = 0x2600,
+  [SWEAT] = 0x1F605,
+  [THMDN] = 0x1F44E,
+  [THMUP] = 0x1F44D,
+  [TJOY] = 0x1F602,
+  [TONGU] = 0x1F61C,
+  [UNAMU] = 0x1F612,
+  [VIC] = 0x270C,
+  [WEARY] = 0x1F629,
+  [WINK] = 0x1F609,
+  [YUMMY] = 0x1F60B,
+};
